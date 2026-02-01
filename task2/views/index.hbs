@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="hero d-flex justify-content-center align-items-center">
+        <div class="container ">
+            <div class="title text-center text-white fw-bold">
+                <i class="fa-solid fa-cloud-sun display-2 fw-bold icon"></i>
+                <span class="display-4 fw-bold"> Weather App</span>
+            </div>
+            <form id="form" class="mt-2 text-center m-auto" action="">
+                <div class="mb-3 mt-3 d-flex justify-content-evenly">
+                    <input type="text" class="form-control w-75 p-3 rounded-4 d-inline-block fs-5" id="country-in" placeholder="Enter country name" name="address">
+                    <div id="loading" class="rounded-4"><i class="fa-solid fa-spinner p-3 fs-2"></i></div>
+                </div>
+                <button type="submit" id="submit" class="btn p-3 rounded-4 mt-2 fs-4 fw-medium">Get weather</button>
+                <div id="form-details">
+                    <div class="mb-3 mt-3 p-3 d-flex justify-content-start align-items-center weather-data">
+                        <i class="fa-solid fa-location-arrow me-2"></i>
+                        <p id="country" class="mb-0 ms-2"></p>
+                    </div>
+                    <div class="mb-3 mt-3 p-3 d-flex justify-content-start align-items-center weather-data">
+                        <i class="fa-solid fa-earth-africa"></i>
+                        <p id="latitude" class="mb-0 ms-2"></p>
+                    </div>
+                    <div class="mb-3 mt-3 p-3 d-flex justify-content-start align-items-center weather-data">
+                        <i class="fa-solid fa-earth-africa"></i>
+                        <p id="longtitude" class="mb-0 ms-2"></p>
+                    </div>
+                    <div class="mb-3 mt-3 p-3 d-flex justify-content-start align-items-center weather-data">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        <p id="temp" class="mb-0 ms-2"></p>
+                    </div>
+                </div>
+                <div id="errorForm">
+                    <p id="error" class="mb-0 ms-2 text-danger p-3 fw-bold"></p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
